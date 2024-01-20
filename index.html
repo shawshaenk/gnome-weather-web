@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+    <link rel="icon" type="image/png" href=""/>
+    <script src="https://kit.fontawesome.com/acfa46ea26.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="childBlocksContainer">
+            <div id="conditionsBlock" class="childBlocks">
+                <h1 class="iconPadding"><i class="fa-solid fa-sun"></i> <i class="fa-solid fa-cloud"></i> <i class="fa-regular fa-snowflake"></i></h1>
+                <h1 id="conditions"></h1>
+            </div>
+        
+            <div id="tempBlock" class="childBlocks">
+                <h1 class="iconPadding"><i class="fa-solid fa-temperature-quarter"></i> <i class="fa-solid fa-temperature-half"></i> <i class="fa-solid fa-temperature-full"></i></h1>
+                <h1 id="temperature"></h1>
+            </div>
+        </div>
+    
+        <div id="weatherBlock">
+            <h1 id="weatherTitle">Weather</h1>
+            <select id="citiesDropdown">
+                <option value="New York City">New York City</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Houston">Houston</option>
+                <option value="Phoenix">Phoenix</option>
+            </select>
+            <img id="weatherImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/GNOME_Weather_icon_2018.svg/1024px-GNOME_Weather_icon_2018.svg.png">
+        </div>
+    </div>
+</body>
+<script src="index.js"></script> 
+</html>

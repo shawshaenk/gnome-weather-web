@@ -1,0 +1,109 @@
+* {
+    font-family: "Cantarell";
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    background-color: #1e1e1e;
+}
+
+.childBlocks {
+    background-color: #242424;
+    border-radius: 20px;
+    width: 440px;
+    height: 290px;
+    animation: zoomIn 0.6s forwards;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+#container {
+    width: 1160px;
+    height: 1000px;
+    margin: auto;
+    margin-top: 375px;
+}
+
+#weatherBlock {
+    width: 700px;
+    height: 600px;
+    background-color: #242424;
+    border-radius: 20px;
+    animation: zoomIn 0.6s forwards;
+    float: right;
+}
+
+#childBlocksContainer {
+    width: 440px;
+    height: 600px;
+    float: right;
+    display: grid;
+    margin-left: 20px;
+}
+
+#conditionsBlock {
+    margin-bottom: 20px;
+}
+
+.iconPadding {
+    padding-top: 40px;
+}
+
+@keyframes zoomIn{
+    0% {
+        transform: scale(0.7);
+        opacity: 30%;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 100%;
+    }
+}
+
+@keyframes zoomInAndOut {
+    0% {
+        transform: scale(1.0);
+        opacity: 100%;
+    }
+    50% {
+        transform: scale(0.7);
+        opacity: 30%;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 100%;
+    }
+}
+
+#weatherTitle {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px
+}
+
+#weatherImage {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+#citiesDropdown {
+    width: 225px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #303030;
+    font-size: 25px;
+    border:0px;
+    text-align-last: center;
+}
