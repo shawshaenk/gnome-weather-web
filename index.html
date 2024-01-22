@@ -11,27 +11,25 @@
 <body>
     <div id="container">
         <div id="childBlocksContainer">
+            <div id="cityBlock" class="childBlocks">
+                <h1 class="icons"><i class="fa-solid fa-city"></i> <i class="fa-solid fa-tree-city"></i> <i class="fa-solid fa-mountain-city"></i></h1>
+                <h1 id="cityDisplayName"></h1>
+            </div>
+
             <div id="conditionsBlock" class="childBlocks">
-                <h1 class="iconPadding"><i class="fa-solid fa-sun"></i> <i class="fa-solid fa-cloud"></i> <i class="fa-regular fa-snowflake"></i></h1>
+                <h1 class="icons"><i class="fa-solid fa-sun"></i> <i class="fa-solid fa-cloud"></i> <i class="fa-regular fa-snowflake"></i></h1>
                 <h1 id="conditions"></h1>
             </div>
         
             <div id="tempBlock" class="childBlocks">
-                <h1 class="iconPadding"><i class="fa-solid fa-temperature-quarter"></i> <i class="fa-solid fa-temperature-half"></i> <i class="fa-solid fa-temperature-full"></i></h1>
+                <h1 class="icons"><i class="fa-solid fa-temperature-quarter"></i> <i class="fa-solid fa-temperature-half"></i> <i class="fa-solid fa-temperature-full"></i></h1>
                 <h1 id="temperature"></h1>
             </div>
         </div>
     
         <div id="weatherBlock">
             <h1 id="weatherTitle">Weather</h1>
-            <!-- <select id="citiesDropdown">
-                <option value="New York City">New York City</option>
-                <option value="Los Angeles">Los Angeles</option>
-                <option value="Chicago">Chicago</option>
-                <option value="Houston">Houston</option>
-                <option value="Phoenix">Phoenix</option>
-            </select> -->
-            <input type="text" id="cityBox" placeholder="Enter a City">
+            <input type="text" id="cityBox" placeholder="Enter a City" autofocus>
             <img id="weatherImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/GNOME_Weather_icon_2018.svg/1024px-GNOME_Weather_icon_2018.svg.png">
         </div>
     </div>
