@@ -1,11 +1,12 @@
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
 const apiKey = "ba87e1f04c9ccbe4f57b4cb024da6d64";
-let dropdown = document.getElementById("citiesDropdown");
+let cityBox = document.getElementById("cityBox");
 let conditions = document.getElementById("conditions");
 let temperature = document.getElementById("temperature");
+let cityName = "New York City";
 
 async function getWeather() {
-    let cityName = dropdown.value;
+    cityName = cityBox.value;
     response = await fetch(apiUrl + cityName + `&appid=${apiKey}`);
     data = await response.json();
     conditions.innerHTML = data.weather[0].main;
@@ -13,7 +14,7 @@ async function getWeather() {
 }
 getWeather();
 
-dropdown.onchange = function animateBlocks() {
+cityBox.onkeydown = function animateBlocks() {
     getWeather();
 
     let tempBlock = document.getElementById('tempBlock');

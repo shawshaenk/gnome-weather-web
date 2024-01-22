@@ -19,6 +19,20 @@ body {
     font-size: 25px;
 }
 
+#cityBox {
+    height: 3vh;
+    width: 9vw;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #303030;
+    font-size: 25px;
+    border:0px;
+    /* text-align-last: center; */
+}
+
 #container {
     width: 1160px;
     height: 1000px;
@@ -93,7 +107,7 @@ body {
     width: 40%;
 }
 
-#citiesDropdown {
+/* #citiesDropdown {
     width: 225px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -106,4 +120,4 @@ body {
     font-size: 25px;
     border:0px;
     text-align-last: center;
-}
+} */
