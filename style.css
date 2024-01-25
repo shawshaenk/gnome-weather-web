@@ -20,8 +20,8 @@ body {
 }
 
 #cityBox {
-    height: 3vh;
-    width: 9vw;
+    height: 50px;
+    width: 250px;
     display: block;
     margin: auto;
     text-align: center;
@@ -95,18 +95,13 @@ body {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 10px
+    padding-top: 20px;
 }
 
 #weatherImage {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 50px;
     display: block;
     margin: auto;
     width: 40%;
-}
-
-.icons {
-    padding-top: 10px;
 }
